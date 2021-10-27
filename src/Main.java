@@ -1,21 +1,21 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the player name and hit enter");
-        String name=scan.next();
-        Player p= new Player();
-        p.setName(name);
+        String name=sc.next();
+        Player p= new Player(name);
 
         System.out.println("The game setup is ready");
 
             int diceVal;
 
-            do {
 
+            do {
                 System.out.print("Hit enter to roll the dice ");
-                 String s= scan.nextLine();
+                String s=sc.nextLine();
                 System.out.println(s);
+                //String k=sc.next();
 
                 Dice dice = new Dice();
                 diceVal=dice.getFaceValue();

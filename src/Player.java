@@ -1,8 +1,9 @@
 public class Player {
     protected String name;
     private int points;
-    private int position;
-
+    public Player(String n){
+        this.name=n;
+    }
     public void displayPoints(int p){
         this.points=p;
         System.out.println(name+" accumulated "+ points+" points");

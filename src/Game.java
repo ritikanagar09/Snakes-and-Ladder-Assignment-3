@@ -83,11 +83,10 @@ public class Game{
                 points = e.points();
 
             } else {
-                System.out.println("Dice gave "+ diceVal);
                 System.out.println("Player cannot move");
             }
         }while(diceVal!=1);
-        Player p=new Player();
+        Player p=new Player(P.getName());
         System.out.println("Game Over");
         p.displayPoints(points);
 
